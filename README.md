@@ -77,10 +77,12 @@ from Bio import SeqIO
 from Bio.Align import PairwiseAligner
 import pandas as pd
 
-def analyze_oprD_resistance(fasta_file):
+
+
+"def analyze_oprD_resistance(fasta_file):
     print(f"Loading sequences from {fasta_file}...")
     sequences = list(SeqIO.parse(fasta_file, "fasta"))
-
+    
     if len(sequences) < 2:
         print("Error: FASTA file must contain at least a reference sequence and one variant.")
         return
@@ -120,7 +122,7 @@ def analyze_oprD_resistance(fasta_file):
     print("Analysis complete! Summary saved to 'alignment_results.csv'.")
 
 if __name__ == "__main__":
-    analyze_oprD_resistance("data/oprD_sequences.fasta")
+    analyze_oprD_resistance("data/oprD_sequences.fasta")" 
 
     
 Step 4: Execute the Pipeline
