@@ -78,8 +78,8 @@ from Bio.Align import PairwiseAligner
 import pandas as pd
 
 
-
-"def analyze_oprD_resistance(fasta_file):
+```python
+def analyze_oprD_resistance(fasta_file):
     print(f"Loading sequences from {fasta_file}...")
     sequences = list(SeqIO.parse(fasta_file, "fasta"))
     
@@ -122,8 +122,8 @@ import pandas as pd
     print("Analysis complete! Summary saved to 'alignment_results.csv'.")
 
 if __name__ == "__main__":
-    analyze_oprD_resistance("data/oprD_sequences.fasta")" 
-
+    analyze_oprD_resistance("data/oprD_sequences.fasta") 
+```
     
 Step 4: Execute the Pipeline
 Run the Python script from your terminal:
